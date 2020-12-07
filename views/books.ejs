@@ -1,0 +1,38 @@
+<%-include('partials/header')%>
+<link rel="stylesheet" href="/stylesheet/books.css">
+
+
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Book excahange</h1>
+    
+    
+    <a class="btn btn-primary btn-lg " href="/book/new" role="button">Add new books</a>
+</div>
+  <div class="container ">
+      <div class="row">
+   <% for (let book of books){%>
+    
+        <div class="photo card-md-4 ">
+            <div class="">
+               
+                <img class="img-fluid img-thumbnail" alt="" src="<%=book.photo%>" class="float-left">
+                
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title"><%= book.name %> </h5>
+                    <a class="btn btn-primary" href="/book/show/<%=book._id%>" role="button" class="btn btn-primary">show information</a>
+                  
+                </div>
+            </div>
+        </div>
+     
+   
+    <% }%>
+</div>
+
+  </div>
+
+    
+</body>
+</html>

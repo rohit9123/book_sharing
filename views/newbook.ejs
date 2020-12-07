@@ -1,0 +1,28 @@
+<%- include('partials/')
+<link rel="stylesheet" href="../public/stylesheet/newbook.css">
+
+<form action="/books" method="POST">
+    <div class="form-group">
+      <label for="book name">book name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" name="book[name]">
+    </div>
+    <div class="form-group">
+      <label for="photo">photo</label>
+      <input type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group">
+      <label for="disc">discription</label>
+      <input type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group">
+      <label for="photo">photo</label>
+      <input type="text" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="button">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+  </form>
+
+  <%-include('partials/footer')%>
+  

@@ -1,0 +1,16 @@
+<%-include('partials/header')%>
+<link rel="stylesheet" href="/stylesheet/show.css">
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-8 card">
+            <img class="img-fluid img-thumbnail card-image-top" alt="" src="<%=book.photo%>" class="float-left">
+            <h5 class="card-tittle"><%=book.name%></h5>
+            <p class="card-text"><%=book.desc%></p>
+            <h6 class=" card-tittle">Contact No: <%=book.contact%></h6>
+            <a class="btn btn-primary" href="book/<%=book._id%>/delete">delete book</a>
+        </div>
+    </div>
+</div>
